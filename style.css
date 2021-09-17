@@ -1,0 +1,45 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-cart {
+  color: black;
+  background: transparent;
+  border: none;
+}
+
+.products {
+  display: flex;
+}
+
+.product-img {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.product-item {
+  margin-right: 100px;
+  font-family: GTEestiPro,arial,sans-serif;
+}
+
+p {
+  color: #f91155;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+.buy-btn {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background-color: #003ead;
+  color: white;
+  padding: 5px 20px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
