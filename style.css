@@ -1,0 +1,44 @@
+h1 {
+  text-align: right;
+}
+
+form {
+  margin-left: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: -26px -18px 11px 1px rgba(34, 60, 80, 0.73);
+  padding: 10px;
+  padding-left: 20px;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.fieldName {
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  margin-top: 20px;
+  background-color: #1674d1;
+  border-color: #1674d1;
+  color: white;
+  padding: 6px 12px;
+}
+
+input {
+  width: 230px;
+}
+
+.input-red {
+  border-color: red;
+}
+
+#textInput {
+  height: 150px;
+  width: 230px;
+}
+/*# sourceMappingURL=style.css.map */
