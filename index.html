@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="https://kit.fontawesome.com/a85a04e757.js" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="container">
+            <header class="header">
+                <a href="index.html" class="brand">
+                    <img src="img/Group_2.svg" alt="Brand">
+                    <div class="logoText">
+                        BRAN<span class="D">D</span>
+                    </div>
+                </a>
+                <form class="browser">
+                    <details class="browse">
+                        <summary class="bigBrowseHeader">
+                            <div class="textBrowse"><span class="B">B</span>rowse</div>
+                            <div class="browseArrow"><i class="fas fa-sort-down"></i></div>
+                        </summary>
+                        <div class="browseMenu">
+                            <h3 class="browseHeader">WOMEN</h3>
+                            <div class="hrBrowseMenu"></div>
+                            <a href="#" class="browseElement">Dresses</a>
+                            <a href="#" class="browseElement">Tops</a>
+                            <a href="#" class="browseElement">Sweaters/Knits</a>
+                            <a href="#" class="browseElement">Jackets/Coats</a>
+                            <a href="#" class="browseElement">Blazers</a>
+                            <a href="#" class="browseElement">Denim</a>
+                            <a href="#" class="browseElement">Leggings/Pants</a>
+                            <a href="#" class="browseElement">Skirts/Shorts</a>
+                            <a href="#" class="browseElement">Accessories</a>
+                            <h3 class="browseHeader">MEN</h3>
+                            <div class="hrBrowseMenu"></div>
+                            <a href="#" class="browseElement">Tees/Tank tops</a>
+                            <a href="#" class="browseElement">Shirts/Polos</a>
+                            <a href="#" class="browseElement">Sweaters</a>
+                            <a href="#" class="browseElement">Sweatshirts/Hoodies</a>
+                            <a href="#" class="browseElement">Blazers</a>
+                            <a href="#" class="browseElement">Jackets/vests</a>
+                        </div>
+
+                    </details>
+                    <input type="search" placeholder="Search for item.." class="searchType">
+                    <button type="submit" class="submit"> <i class="fas fa-search browseIMG"></i></button>
+                </form>
+                <div class="MyAccount">
+                    <cart ref='cart'></cart>
+                    <a href="checkout.html" class="buttonAccaunt button button_background">
+                        <div class="textAccount"><span class="myAccou">My Accou</span>nt </div>
+                        <div class="accountArrow"><i class="fas fa-sort-down"></i></div>
+                    </a>
+                </div>
+                <!--<summary class="buttonAccauntText">
+                    </summary>-->
+
+                <!-- <div class="menuAccount">
+                        <a class="productCard" href="singlePage.html">
+                            <img src="img/productCard1.jpg" alt="productCard" class="accountIMG">
+                            <div class="accountProductText">
+                                <div class="accountPTextBlock">Rebox Zane</div>
+                                <div class="accountPTextBlock"><img src="img/stars.jpg" alt="stars"></div>
+                                <div class="accountPTextBlock accountPrice">1 x $250</div>
+                            </div>
+                            <i class="fas fa-times-circle actionButton"></i>
+                        </a>
+                        <div class="accountHR"></div>
+                        <a class="productCard" href="singlePage.html">
+                            <img src="img/productCard2.jpg" alt="productCard" class="accountIMG">
+                            <div class="accountProductText">
+                                <div class="accountPTextBlock">Rebox Zane</div>
+                                <div class="accountPTextBlock"><img src="img/stars.jpg" alt="stars"></div>
+                                <div class="accountPTextBlock accountPrice">1 x $250</div>
+                            </div>
+                            <i class="fas fa-times-circle actionButton"></i>
+                        </a>
+                        <div class="accountHR"></div>
+                        <div class="totalSum">TOTAL <span class="sum">$500.00</span></div>
+                        <a href="checkout.html" class="checkout button">Checkout</a>
+                        <a href="shoppingCart.html" class="goToCard button">Go to cart</a>
+                    </div>
+                </details>
+                <a href="checkout.html" class="buttonAccaunt button button_background">
+                    <div class="textAccount"><span class="myAccou">My Accou</span>nt </div>
+                    <div class="accountArrow"><i class="fas fa-sort-down"></i></div>
+                </a> -->
+            </header>
+        </div>
+        <div class="border">
+        </div>
+        <div class="container">
+            <nav class="menu">
+                <div class="menuLink">
+                    HOME
+                    <div class="megaMenu">
+                        <div class="megaElement">
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder">
+                                </div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <a href="product.html" class="megaAncor ancor">Blazers</a>
+                            <a href="product.html" class="megaAncor ancor">Denim</a>
+                            <a href="product.html" class="megaAncor ancor">Leggings/Pants</a>
+                            <a href="product.html" class="megaAncor ancor">Skirts/Shorts</a>
+                            <a href="product.html" class="megaAncor ancor">Accessories</a>
+                        </div>
+                        <div class="megaElement">
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                        </div>
+                        <div class="megaElement">
+                            <div class="megaHeader lastMegaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <img src="img/megaIMG.jpg" alt="IMG" class="megaIMG">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="menuLink">MAN
+                    <div class="megaMenu">
+                        <div class="megaElement">
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder">
+                                </div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <a href="product.html" class="megaAncor ancor">Blazers</a>
+                            <a href="product.html" class="megaAncor ancor">Denim</a>
+                            <a href="product.html" class="megaAncor ancor">Leggings/Pants</a>
+                            <a href="product.html" class="megaAncor ancor">Skirts/Shorts</a>
+                            <a href="product.html" class="megaAncor ancor">Accessories</a>
+                        </div>
+                        <div class="megaElement">
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                        </div>
+                        <div class="megaElement">
+                            <div class="megaHeader lastMegaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <img src="img/megaIMG.jpg" alt="IMG" class="megaIMG">
+                        </div>
+                    </div>
+                </div>
+                <div class="menuLink">WOMEN
+                    <div class="megaMenu">
+                        <div class="megaElement">
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder">
+                                </div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <a href="product.html" class="megaAncor ancor">Blazers</a>
+                            <a href="product.html" class="megaAncor ancor">Denim</a>
+                            <a href="product.html" class="megaAncor ancor">Leggings/Pants</a>
+                            <a href="product.html" class="megaAncor ancor">Skirts/Shorts</a>
+                            <a href="product.html" class="megaAncor ancor">Accessories</a>
+                        </div>
+                        <div class="megaElement">
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                        </div>
+                        <div class="megaElement">
+                            <div class="megaHeader lastMegaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <img src="img/megaIMG.jpg" alt="IMG" class="megaIMG">
+                        </div>
+                    </div>
+                </div>
+                <div class="menuLink">KIDS
+                    <div class="megaMenu">
+                        <div class="megaElement">
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder">
+                                </div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <a href="product.html" class="megaAncor ancor">Blazers</a>
+                            <a href="product.html" class="megaAncor ancor">Denim</a>
+                            <a href="product.html" class="megaAncor ancor">Leggings/Pants</a>
+                            <a href="product.html" class="megaAncor ancor">Skirts/Shorts</a>
+                            <a href="product.html" class="megaAncor ancor">Accessories</a>
+                        </div>
+                        <div class="megaElement">
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                        </div>
+                        <div class="megaElement">
+                            <div class="megaHeader lastMegaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <img src="img/megaIMG.jpg" alt="IMG" class="megaIMG">
+                        </div>
+                    </div>
+                </div>
+                <div class="menuLink">ACCOSERIESE
+                    <div class="megaMenu">
+                        <div class="megaElement">
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder">
+                                </div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <a href="product.html" class="megaAncor ancor">Blazers</a>
+                            <a href="product.html" class="megaAncor ancor">Denim</a>
+                            <a href="product.html" class="megaAncor ancor">Leggings/Pants</a>
+                            <a href="product.html" class="megaAncor ancor">Skirts/Shorts</a>
+                            <a href="product.html" class="megaAncor ancor">Accessories</a>
+                        </div>
+                        <div class="megaElement">
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                        </div>
+                        <div class="megaElement">
+                            <div class="megaHeader lastMegaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <img src="img/megaIMG.jpg" alt="IMG" class="megaIMG">
+                        </div>
+                    </div>
+                </div>
+                <div class="menuLink">FEATURED
+                    <div class="megaMenu lastMegaMenu lastMegaMenu_featured">
+                        <div class="megaElement">
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder">
+                                </div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <a href="product.html" class="megaAncor ancor">Blazers</a>
+                            <a href="product.html" class="megaAncor ancor">Denim</a>
+                            <a href="product.html" class="megaAncor ancor">Leggings/Pants</a>
+                            <a href="product.html" class="megaAncor ancor">Skirts/Shorts</a>
+                            <a href="product.html" class="megaAncor ancor">Accessories</a>
+                        </div>
+                        <div class="megaElement">
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                        </div>
+                        <div class="megaElement">
+                            <div class="megaHeader lastMegaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <img src="img/megaIMG.jpg" alt="IMG" class="megaIMG">
+                        </div>
+                    </div>
+                </div>
+                <div class="menuLink">HOT DEALS
+                    <div class="megaMenu lastMegaMenu">
+                        <div class="megaElement">
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder">
+                                </div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <a href="product.html" class="megaAncor ancor">Blazers</a>
+                            <a href="product.html" class="megaAncor ancor">Denim</a>
+                            <a href="product.html" class="megaAncor ancor">Leggings/Pants</a>
+                            <a href="product.html" class="megaAncor ancor">Skirts/Shorts</a>
+                            <a href="product.html" class="megaAncor ancor">Accessories</a>
+                        </div>
+                        <div class="megaElement">
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <div class="megaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                        </div>
+                        <div class="megaElement">
+                            <div class="megaHeader lastMegaHeader">WOMEN
+                                <div class="megaBorder"></div>
+                            </div>
+                            <a href="product.html" class="megaAncor ancor">Dresses</a>
+                            <a href="product.html" class="megaAncor ancor">Tops</a>
+                            <a href="product.html" class="megaAncor ancor">Sweaters/Knits</a>
+                            <a href="product.html" class="megaAncor ancor">Jackets/Coats</a>
+                            <img src="img/megaIMG.jpg" alt="IMG" class="megaIMG">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="smileBoy">
+                    <div class="mainFlex">
+                        <div class="redLine"></div>
+                        <div class="mainText" v-on:click="alert('hi')">THE BRAND <br>
+                            <!-- Здесь обработчик не срабатывает.... -->
+                            <div class="luxerious">OF LUXERIOUS<span class="fashion"> FASHION</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <section class="promo">
+                <div class="promoLeft">
+                    <a href="product.html" class="promoBlock">
+                        <div class="promoText">hOT dEAL <div class="redPromoText">FOR MEN</div>
+                            <hr class="invisibleBR">
+                        </div>
+                        <img src="img/Layer_30.jpg" alt="men" class="promoIMG ">
+                    </a>
+                    <a href="product.html" class="promoBlock">
+                        <div class="promoText promoText_big">
+                            LUXIROUS & trendy <div class="redPromoText">ACCESORIES</div>
+                            <hr class="invisibleBR">
+                        </div>
+                        <img src="img/Layer_37.jpg" alt="accessories" class="promoIMG backgroundPromo promoIMG_big">
+                    </a>
+                </div>
+                <div class="promoRight">
+                    <a href="product.html" class="promoBlock">
+                        <div class="promoText">
+                            30% offer
+                            <div class="redPromoText">women</div>
+                            <hr class="invisibleBR">
+                        </div>
+                        <img src="img/Layer_32.jpg" alt="women" class="promoIMG">
+                    </a>
+                    <a href="product.html" class="promoBlock">
+                        <div class="promoText">
+                            new arrivals
+                            <div class="redPromoText">FOR kids</div>
+                            <hr class="invisibleBR">
+                        </div>
+                        <img src="img/Layer_31.jpg" alt="kids" class="promoIMG">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <section class="BChoise">
+            <div class="container">
+                <div class="featuredItems">Featured Items
+                    <div class="featuredText">
+                        Shop for items based on what we featured in this week
+                    </div>
+                </div>
+                <div class="BChoise1">
+                    <a href="singlePage.html" class="BChoiseCard">
+                        <object>
+                            <a href="#" class="BCAdd">
+                                <img src=" img/Basket2.svg" alt="basket">
+                                <div class="BCAddText">Add to Cart</div>
+                            </a>
+                        </object>
+                        <img src="img/Layer_2.jpg" alt="card" class="BChoiseIMG">
+                        <div class="BChoiseName">red blouse</div>
+                        <div class="BChoisePrice">$52.00</div>
+                    </a>
+                    <a href="singlePage.html" class="BChoiseCard">
+                        <object>
+                            <a href="#" class="BCAdd">
+                                <img src="img/Basket2.svg" alt="basket">
+                                <div class="BCAddText">Add to Cart</div>
+                            </a>
+                        </object>
+                        <img src="img/Layer_3.jpg" alt="card" class="BChoiseIMG">
+                        <div class="BChoiseName">Blue jacket</div>
+                        <div class="BChoisePrice">$52.00</div>
+                    </a>
+                    <a href="singlePage.html" class="BChoiseCard">
+                        <object>
+                            <a href="#" class="BCAdd">
+                                <img src="img/Basket2.svg" alt="basket">
+                                <div class="BCAddText">Add to Cart</div>
+                            </a>
+                        </object>
+                        <img src="img/Layer_4.jpg" alt="card" class="BChoiseIMG">
+                        <div class="BChoiseName">T-Shirt with flowers</div>
+                        <div class="BChoisePrice">$52.00</div>
+                    </a>
+                    <a href="singlePage.html" class="BChoiseCard">
+                        <object>
+                            <a href="#" class="BCAdd">
+                                <img src="img/Basket2.svg" alt="basket">
+                                <div class="BCAddText">Add to Cart</div>
+                            </a>
+                        </object>
+                        <img src="img/Layer_5.jpg" alt="card" class="BChoiseIMG">
+                        <div class="BChoiseName">Striped blouse</div>
+                        <div class="BChoisePrice">$52.00</div>
+                    </a>
+                </div>
+                <div class="BChoise2">
+                    <a href="singlePage.html" class="BChoiseCard">
+                        <object>
+                            <a href="#" class="BCAdd">
+                                <img src="img/Basket2.svg" alt="basket">
+                                <div class="BCAddText">Add to Cart</div>
+                            </a>
+                        </object>
+                        <img src="img/Layer_6.jpg" alt="card" class="BChoiseIMG">
+                        <div class="BChoiseName">Blue blazer</div>
+                        <div class="BChoisePrice">$52.00</div>
+                    </a>
+                    <a href="singlePage.html" class="BChoiseCard">
+                        <object>
+                            <a href="#" class="BCAdd">
+                                <img src="img/Basket2.svg" alt="basket">
+                                <div class="BCAddText">Add to Cart</div>
+                            </a>
+                        </object>
+                        <img src="img/Layer_7.jpg" alt="card" class="BChoiseIMG">
+                        <div class="BChoiseName">White jeans</div>
+                        <div class="BChoisePrice">$52.00</div>
+                    </a>
+                    <a href="singlePage.html" class="BChoiseCard">
+                        <object>
+                            <a href="#" class="BCAdd">
+                                <img src="img/Basket2.svg" alt="basket">
+                                <div class="BCAddText">Add to Cart</div>
+                            </a>
+                        </object>
+                        <img src="img/Layer_8.jpg" alt="card" class="BChoiseIMG">
+                        <div class="BChoiseName">Blue Sweater</div>
+                        <div class="BChoisePrice">$52.00</div>
+                    </a>
+                    <a href="singlePage.html" class="BChoiseCard">
+                        <object>
+                            <a href="#" class="BCAdd">
+                                <img src="img/Basket2.svg" alt="basket">
+                                <div class="BCAddText">Add to Cart</div>
+                            </a>
+                        </object>
+                        <img src="img/Layer_9.jpg" alt="card" class="BCCLast BChoiseIMG">
+                        <div class="BChoiseName">Mango People T-shirt</div>
+                        <div class="BChoisePrice">$52.00</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="productParent">
+                <a href="product.html" class="AllProduct button_background">Browse All Product <i
+                        class="fas fa-long-arrow-alt-right"></i>
+                </a>
+            </div>
+            <div class="offer">
+                <div class="parrentOfferIMG"><img src="img/Layer_38.jpg" alt="OfferIMG" class="offerIMG">
+                    <div class="offerIMGText"><span class="offer30">30%</span> <span
+                            class="offerIMGTextRed">OFFER</span>
+                        <span class="forWomen">FOR WOMEN</span>
+                    </div>
+                </div>
+                <div class="offerText">
+                    <div class="offerTextBlock">
+                        <img src="img/OTBBlock1.svg" alt="offerTextIMG" class="offerTextIMG">
+                        <div class="OTBSecondBlock">
+                            <div class="OTBHeader">
+                                Free Delivery
+                            </div>
+                            <div class="OTBText">
+                                Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                                extensive
+                                models.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offerTextBlock">
+                        <img src="img/OTBBlock2.svg" alt="offerTextIMG" class="offerTextIMG">
+                        <div class="OTBSecondBlock">
+                            <div class="OTBHeader">
+                                Sales & discounts
+                            </div>
+                            <div class="OTBText">
+                                Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                                extensive
+                                models.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offerTextBlock">
+                        <img src="img/OTBBlock3.svg" alt="offerTextIMG" class="offerTextIMG">
+                        <div class="OTBSecondBlock">
+                            <div class="OTBHeader">
+                                Quality assurance
+                            </div>
+                            <div class="OTBText">
+                                Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                                extensive
+                                models.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe">
+            <div class="container">
+                <div class="subscribeText">
+                    <div class="leftSubscribe">
+                        <div class="leftSubscribeTop"><img src="img/Layer_40.png" alt="Smile" class="leftSubscribeIMG">
+                            <div class="leftSubscribeText">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</div>
+                        </div>
+                        <div class="leftSubscribeBottom">Bin Burhan
+                            <div class="NameSubscribe">Dhaka, Bd</div>
+                            <div class="subscribeChooser">
+                                <div class="subscribeSelector"></div>
+                                <div class="subscribeSelector subscribeSelector_pink"></div>
+                                <div class="subscribeSelector"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="subscribeLine"></div>
+                    <div class="rightSubscribe">
+                        <h4 class="rSubscribeHeader">
+                            <div class="RSubscripeBigHeader">SUBSCRIBE</div>
+                            <span class="rSubscribeHeaderLeft">FOR OUR NE</span><span class="rSubscribeHeaderRight">W
+                                LETTER
+                                AND PROMOTION</span>
+                        </h4>
+                        <form class="subscribeForm">
+                            <input type="email" class="rSubscribeEmail" placeholder="Enter Your Email">
+                            <a href=# class="rSubscribeButton button_background">Subscribe</a>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <footer class="footer">
+                <div class="footerBlock footerInfo">
+                    <div class="footerBrand">
+                        <a href="index.html" class="brand">
+                            <img src="img/Group_2.svg" alt="Brand">
+                            <div class="logoText">
+                                BRAN<span class="D">D</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footerText">
+                        Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                        syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+                        expanded
+                        array of processes and cross-unit partnerships. <br><br>
+
+                        Efficiently plagiarize 24/365 action items and focused infomediaries.
+                        Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                    </div>
+                </div>
+                <div class="footerBlock footerBlockCompany">
+                    <div class="footerHeader">COMPANY</div>
+                    <a href="#" class="footerAncor ancor">
+                        Home
+                    </a>
+                    <a href="" class="footerAncor ancor">
+                        Shop
+                    </a><a href="" class="footerAncor ancor">
+                        About
+                    </a><a href="" class="footerAncor ancor">
+                        How it works
+                    </a>
+                    <a href="" class="footerAncor ancor">
+                        Contact
+                    </a>
+                </div>
+                <div class="footerBlock footerBlockInformation">
+                    <div class="footerHeader">INFORMATION</div>
+                    <a href="#" class="footerAncor ancor">
+                        Terms & Condition
+                    </a>
+                    <a href="" class="footerAncor ancor">
+                        Privacy Policy
+                    </a>
+                    <a href="" class="footerAncor ancor">
+                        How to Buy
+                    </a><a href="" class="footerAncor ancor">
+                        How to Sell
+                    </a>
+                    <a href="" class="footerAncor ancor">
+                        Promotion
+                    </a>
+                </div>
+                <div class="footerBlock footerBlockShopCategory">
+                    <div class="footerHeader">SHOP CATEGORY</div>
+                    <a href="#" class="footerAncor ancor">
+                        Men
+                    </a><a href="" class="footerAncor ancor">
+                        Women
+                    </a>
+                    <a href="" class="footerAncor ancor">
+                        Child
+                    </a><a href="" class="footerAncor ancor">
+                        Apparel
+                    </a>
+                    <a href="" class="footerAncor ancor">
+                        Browse All
+                    </a>
+                </div>
+            </footer>
+        </div>
+        <footer class="footerBottom">
+            <div class="container bottomFlex">
+                <div class="leftBlock">
+                    <span class="c">© 2017</span> Brand All Rights Reserved.
+                </div>
+                <div class="rightBlock">
+                    <a href="#" class="bottomAncor ancor"><i class="fab fa-facebook-f ancor"></i></a>
+                    <a href="#" class="bottomAncor ancor"><i class="fab fa-twitter ancor"></i></a>
+                    <a href="#" class="bottomAncor ancor"><i class="fab fa-linkedin-in ancor"></i></a>
+                    <a href="#" class="bottomAncor ancor"><i class="fab fa-pinterest-p ancor"></i></a>
+                    <a href="#" class="bottomAncor ancor"><i class="fab fa-google-plus-g ancor"></i></a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" type="application/javascript"></script>
+        <script src="public/js/CartComponent.js" type="application/javascript"></script>
+        <script src="public/js/FilterComp.js" type="application/javascript"></script>
+        <script src="public/js/ErrorComp.js" type="application/javascript"></script>
+        <script src="public/js/main.js" type="application/javascript"></script>
+    </div>
+</body>
+
+</html>
