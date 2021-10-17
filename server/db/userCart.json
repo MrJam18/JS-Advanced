@@ -1,0 +1,66 @@
+[
+    {
+        "id_product": 0,
+        "product_name": "white t-shirt",
+        "price": "52.00",
+        "img": "img/Layer_2.jpg",
+        "visible": false,
+        "quantity": 1
+    },
+    {
+        "id_product": 1,
+        "product_name": "red blouse",
+        "price": "52.00",
+        "img": "img/Layer_3.jpg",
+        "visible": false,
+        "quantity": 1
+    },
+    {
+        "id_product": 2,
+        "product_name": "Blue jacket",
+        "price": "52.00",
+        "img": "img/Layer_4.jpg",
+        "visible": false,
+        "quantity": 1
+    },
+    {
+        "id_product": 3,
+        "product_name": "T-Shirt with flowers",
+        "price": "52.00",
+        "img": "img/Layer_5.jpg",
+        "visible": false,
+        "quantity": 1
+    },
+    {
+        "id_product": 4,
+        "product_name": "Striped blouse",
+        "price": "52.00",
+        "img": "img/Layer_6.jpg",
+        "visible": false,
+        "quantity": 1
+    },
+    {
+        "id_product": 5,
+        "product_name": "Blue blazer",
+        "price": "52.00",
+        "img": "img/Layer_7.jpg",
+        "visible": false,
+        "quantity": 1
+    },
+    {
+        "id_product": 6,
+        "product_name": "White jeans",
+        "price": "52.00",
+        "img": "img/Layer_8.jpg",
+        "visible": false,
+        "quantity": 1
+    },
+    {
+        "id_product": 7,
+        "product_name": "Blue Sweater",
+        "price": "52.00",
+        "img": "img/Layer_9.jpg",
+        "visible": false,
+        "quantity": 1
+    }
+]
