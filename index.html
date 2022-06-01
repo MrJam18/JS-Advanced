@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="https://kit.fontawesome.com/a85a04e757.js" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+            <header-comp ref='header'></header-comp>
+            <div class="searchField container" v-if= 'searchContent'>
+                <a href="singlePage.html" class="BChoiseCard BChoiseCard-search imgBlock" v-for= 'product of filtered' :data-id-product = 'product.id_product'>
+                    <object>
+                        <a href="#" class="BCAdd" @click.prevent= '$refs.header.$refs.cart.addProduct()'>
+                            <img src="img/Basket2.svg" alt="basket">
+                            <div class="BCAddText">Add to Cart</div>
+                        </a>
+                    </object>
+                    <img :src="product.img" alt="card" class="BChoiseIMG imgBackground">
+                    <div class="BChoiseName">{{product.product_name}}</div>
+                    <div class="BChoisePrice">${{product.price}}</div>
+                </a>
+            </div>
+        <div class="vue-field" v-show="filteredInvisible">
+        <div class="main">
+            <div class="container">
+                <div class="smileBoy">
+                    <div class="mainFlex">
+                        <div class="redLine"></div>
+                        <div class="mainText">THE BRAND <br>
+                            <!-- Здесь обработчик не срабатывает.... -->
+                            <div class="luxerious">OF LUXERIOUS<span class="fashion"> FASHION</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <section class="promo">
+                <div class="promoLeft">
+                    <a href="product.html" class="promoBlock">
+                        <div class="promoText">hOT dEAL <div class="redPromoText">FOR MEN</div>
+                            <hr class="invisibleBR">
+                        </div>
+                        <img src="img/Layer_30.jpg" alt="men" class="promoIMG ">
+                    </a>
+                    <a href="product.html" class="promoBlock">
+                        <div class="promoText promoText_big">
+                            LUXIROUS & trendy <div class="redPromoText">ACCESORIES</div>
+                            <hr class="invisibleBR">
+                        </div>
+                        <img src="img/Layer_37.jpg" alt="accessories" class="promoIMG backgroundPromo promoIMG_big">
+                    </a>
+                </div>
+                <div class="promoRight">
+                    <a href="product.html" class="promoBlock">
+                        <div class="promoText">
+                            30% offer
+                            <div class="redPromoText">women</div>
+                            <hr class="invisibleBR">
+                        </div>
+                        <img src="img/Layer_32.jpg" alt="women" class="promoIMG">
+                    </a>
+                    <a href="product.html" class="promoBlock">
+                        <div class="promoText">
+                            new arrivals
+                            <div class="redPromoText">FOR kids</div>
+                            <hr class="invisibleBR">
+                        </div>
+                        <img src="img/Layer_31.jpg" alt="kids" class="promoIMG">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <section class="BChoise">
+            <div class="container">
+                <div class="featuredItems">Featured Items
+                    <div class="featuredText">
+                        Shop for items based on what we featured in this week
+                    </div>
+                </div>
+                <div class="BChoise1">
+                    <a href="singlePage.html" class="BChoiseCard" data-id-product= '0'>
+                        <object>
+                            <a href="#" class="BCAdd" @click.prevent= '$refs.header.$refs.cart.addProduct()'>
+                                <img src="img/Basket2.svg" alt="basket">
+                                <div class="BCAddText">Add to Cart</div>
+                            </a>
+                        </object>
+                        <img src="img/Layer_2.jpg" alt="card" class="BChoiseIMG">
+                        <div class="BChoiseName">white t-shirt</div>
+                        <div class="BChoisePrice">$52.00</div>
+                    </a>
+                    <a href="singlePage.html" class="BChoiseCard" data-id-product= '1'>
+                        <object>
+                            <a href="#" class="BCAdd" @click.prevent= '$refs.header.$refs.cart.addProduct()' >
+                                <img src="img/Basket2.svg" alt="basket">
+                                <div class="BCAddText">Add to Cart</div>
+                            </a>
+                        </object>
+                        <img src="img/Layer_3.jpg" alt="card" class="BChoiseIMG">
+                        <div class="BChoiseName">red blouse</div>
+                        <div class="BChoisePrice">$52.00</div>
+                    </a>
+                    <a href="singlePage.html" class="BChoiseCard" data-id-product= '2'>
+                        <object>
+                            <a href="#" class="BCAdd" @click.prevent= '$refs.header.$refs.cart.addProduct()'>
+                                <img src="img/Basket2.svg" alt="basket">
+                                <div class="BCAddText">Add to Cart</div>
+                            </a>
+                        </object>
+                        <img src="img/Layer_4.jpg" alt="card" class="BChoiseIMG">
+                        <div class="BChoiseName">Blue jacket</div>
+                        <div class="BChoisePrice">$52.00</div>
+                    </a>
+                    <a href="singlePage.html" class="BChoiseCard" data-id-product= '3'>
+                        <object>
+                            <a href="#" class="BCAdd" @click.prevent= '$refs.header.$refs.cart.addProduct()'>
+                                <img src="img/Basket2.svg" alt="basket">
+                                <div class="BCAddText">Add to Cart</div>
+                            </a>
+                        </object>
+                        <img src="img/Layer_5.jpg" alt="card" class="BChoiseIMG">
+                        <div class="BChoiseName">T-Shirt with flowers</div>
+                        <div class="BChoisePrice">$52.00</div>
+                    </a>
+                </div>
+                <div class="BChoise2">
+                    <a href="singlePage.html" class="BChoiseCard" data-id-product= '4'>
+                        <object>
+                            <a href="#" class="BCAdd" @click.prevent= '$refs.header.$refs.cart.addProduct()'>
+                                <img src="img/Basket2.svg" alt="basket">
+                                <div class="BCAddText">Add to Cart</div>
+                            </a>
+                        </object>
+                        <img src="img/Layer_6.jpg" alt="card" class="BChoiseIMG">
+                        <div class="BChoiseName">Striped blouse</div>
+                        <div class="BChoisePrice">$52.00</div>
+                    </a>
+                    <a href="singlePage.html" class="BChoiseCard" data-id-product= '5'>
+                        <object>
+                            <a href="#" class="BCAdd" @click.prevent= '$refs.header.$refs.cart.addProduct()'>
+                                <img src="img/Basket2.svg" alt="basket">
+                                <div class="BCAddText">Add to Cart</div>
+                            </a>
+                        </object>
+                        <img src="img/Layer_7.jpg" alt="card" class="BChoiseIMG">
+                        <div class="BChoiseName">Blue blazer</div>
+                        <div class="BChoisePrice">$52.00</div>
+                    </a>
+                    <a href="singlePage.html" class="BChoiseCard" data-id-product= '6'>
+                        <object>
+                            <a href="#" class="BCAdd" @click.prevent= '$refs.header.$refs.cart.addProduct()'>
+                                <img src="img/Basket2.svg" alt="basket">
+                                <div class="BCAddText">Add to Cart</div>
+                            </a>
+                        </object>
+                        <img src="img/Layer_8.jpg" alt="card" class="BChoiseIMG">
+                        <div class="BChoiseName">White jeans</div>
+                        <div class="BChoisePrice">$52.00</div>
+                    </a>
+                    <a href="singlePage.html" class="BChoiseCard" data-id-product= '7'>
+                        <object>
+                            <a href="#" class="BCAdd" @click.prevent= '$refs.header.$refs.cart.addProduct()'>
+                                <img src="img/Basket2.svg" alt="basket">
+                                <div class="BCAddText">Add to Cart</div>
+                            </a>
+                        </object>
+                        <img src="img/Layer_9.jpg" alt="card" class="BCCLast BChoiseIMG">
+                        <div class="BChoiseName">Blue Sweater</div>
+                        <div class="BChoisePrice">$52.00</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="productParent">
+                <a href="product.html" class="AllProduct button_background">Browse All Product <i
+                        class="fas fa-long-arrow-alt-right"></i>
+                </a>
+            </div>
+            <div class="offer">
+                <div class="parrentOfferIMG"><img src="img/Layer_38.jpg" alt="OfferIMG" class="offerIMG">
+                    <div class="offerIMGText"><span class="offer30">30%</span> <span
+                            class="offerIMGTextRed">OFFER</span>
+                        <span class="forWomen">FOR WOMEN</span>
+                    </div>
+                </div>
+                <div class="offerText">
+                    <div class="offerTextBlock">
+                        <img src="img/OTBBlock1.svg" alt="offerTextIMG" class="offerTextIMG">
+                        <div class="OTBSecondBlock">
+                            <div class="OTBHeader">
+                                Free Delivery
+                            </div>
+                            <div class="OTBText">
+                                Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                                extensive
+                                models.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offerTextBlock">
+                        <img src="img/OTBBlock2.svg" alt="offerTextIMG" class="offerTextIMG">
+                        <div class="OTBSecondBlock">
+                            <div class="OTBHeader">
+                                Sales & discounts
+                            </div>
+                            <div class="OTBText">
+                                Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                                extensive
+                                models.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offerTextBlock">
+                        <img src="img/OTBBlock3.svg" alt="offerTextIMG" class="offerTextIMG">
+                        <div class="OTBSecondBlock">
+                            <div class="OTBHeader">
+                                Quality assurance
+                            </div>
+                            <div class="OTBText">
+                                Worldwide delivery on all. Authorit tively morph next-generation innov tion with
+                                extensive
+                                models.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe">
+            <div class="container">
+                <div class="subscribeText">
+                    <div class="leftSubscribe">
+                        <div class="leftSubscribeTop"><img src="img/Layer_40.png" alt="Smile" class="leftSubscribeIMG">
+                            <div class="leftSubscribeText">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                                a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</div>
+                        </div>
+                        <div class="leftSubscribeBottom">Bin Burhan
+                            <div class="NameSubscribe">Dhaka, Bd</div>
+                            <div class="subscribeChooser">
+                                <div class="subscribeSelector"></div>
+                                <div class="subscribeSelector subscribeSelector_pink"></div>
+                                <div class="subscribeSelector"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="subscribeLine"></div>
+                    <div class="rightSubscribe">
+                        <h4 class="rSubscribeHeader">
+                            <div class="RSubscripeBigHeader">SUBSCRIBE</div>
+                            <span class="rSubscribeHeaderLeft">FOR OUR NE</span><span class="rSubscribeHeaderRight">W
+                                LETTER
+                                AND PROMOTION</span>
+                        </h4>
+                        <form class="subscribeForm">
+                            <input type="email" class="rSubscribeEmail" placeholder="Enter Your Email">
+                            <a href=# class="rSubscribeButton button_background">Subscribe</a>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer-comp></footer-comp>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" type="application/javascript"></script>
+        <script src="dist/build.js" type="application/javascript"></script>
+        <!-- <script src="js/header.js" type="application/javascript"></script>
+        <script src="js/footer.js" type="application/javascript"></script>
+        <script src='js/ProductComponent.js'></script>
+        <script src="js/main.js" type="application/javascript"></script> -->
+    </div>
+</body>
+
+</html>

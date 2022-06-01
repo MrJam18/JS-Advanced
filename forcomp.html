@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="btn-cart" type="button" @click="showCart = !showCart"><img src="img/basket.svg" alt="Basket"
+            class="basket"></button>
+    <div class="cart-block" v-show="showCart">
+        <cart-item v-for="item of cartItems" :key="item.id_product" :img="imgCart" :cart-item="item" @remove="remove">
+        </cart-item>
+        <div class="total">Total quantity: 0 items</div>
+    </div>
+    </div>
+    <div class="cart-item">
+        <div class="productCard">
+            <div class="product-bio">
+                <img :src="img" alt="Some img" class="accountIMG">
+                <div class="product-desc accountProductText">
+                    <div class="product-title accountPTextBlock">{{ cartItem.product_name }}</div>
+                    <div class="product-quantity accountPTextBlock">Quantity: {{ cartItem.quantity }}</div>
+                    <div class="product-single-price accountPTextBlock accountPrice">$ {{ cartItem.price }} each</div>
+                </div>
+            </div>
+        </div>
+        <div class="right-block">
+            <div class="product-price">{{cartItem.quantity*cartItem.price}}</div>
+            //<button class="del-btn" @click="$emit('remove', cartItem)">&times;</button>
+            <i class="fas fa-times-circle" @click="$emit('remove', cartItem)"></i>
+        </div>
+    </div>
+    `
+</body>
+
+</html>
+<div class="basketBlock">
+    <div class="total">TOTAL:
+        <div class="totalSum">SUM:<span class="sum">$0.00</span></div>
+        <div class="totalQuantity totalSum">quantity: 0 items</div>
+    </div>
+</div>
